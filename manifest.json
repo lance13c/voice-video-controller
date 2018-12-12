@@ -1,0 +1,39 @@
+{
+   "manifest_version": 2,
+   "name":"Video Voice Controls",
+   "description":"Gives you the ability to control videos through voice controls",
+   "version":"0.0.1",
+   "author":"Dominic Cicilio",
+   "permissions": [
+        "desktopCapture",
+        "activeTab",
+        "pageCapture",
+        "tabs",
+        "tabCapture",
+        "experimental",
+        "audioCapture",
+        "videoCapture"
+    ],
+    "web_accessible_resources": [
+        "./src/permissions/permissions.html",
+        "./src/permissions/permissions.js"
+    ],
+    "content_scripts": [{
+      "matches": ["*://*/*"],
+      "js": ["./src/js/content.js"]
+    }],
+    "background": {
+        "scripts": ["./dist/main.js"],
+        "persistent": true
+    },
+    "browser_action":  {
+        "default_popup": "/index.html",
+        "default_icon": {
+            "128": "/src/assets/mic.png"
+        }
+    },
+    "icons": {
+        "128": "/src/assets/mic.png"
+    }
+   }
+   
