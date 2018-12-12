@@ -9,5 +9,8 @@
   },
   "devDependencies": {
     "sass": "^1.15.2"
+  },
+  "scripts": {
+    "start": "parcel ./src/js/main.js"
   }
 }
