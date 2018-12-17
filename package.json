@@ -8,9 +8,19 @@
     "configs": "^1.0.3"
   },
   "devDependencies": {
-    "sass": "^1.15.2"
+    "babelify": "^10.0.0",
+    "browserify": "^16.2.3",
+    "gulp": "^4.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "sass": "^1.15.2",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-source-stream": "^2.0.0",
+    "webpack": "^4.27.1",
+    "webpack-cli": "^3.1.2"
   },
   "scripts": {
-    "start": "parcel ./src/js/main.js"
+    "start": "./node_modules/.bin/gulp",
+    "build": "./node_modules/.bin/gulp"
   }
 }

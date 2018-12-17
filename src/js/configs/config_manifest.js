@@ -1,4 +1,4 @@
-import youtube from "./configs/youtube.json"
+import youtube from "./youtube.json"
 
 
 export function getConfig() {

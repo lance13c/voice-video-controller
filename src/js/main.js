@@ -1,5 +1,5 @@
 import annyang from "annyang/dist/annyang.js";
-import {getConfig} from "./config_manifest"
+import {getConfig} from "./configs/config_manifest"
 
 console.log("test");
 
